@@ -1,0 +1,351 @@
+/*
+    Website 16 learner
+    Mayank All Right Reserved
+    CSS/style
+*/
+*
+{
+    margin: 0;
+    user-select: none;
+    color:var(-dark);
+    font-family:sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    overflow-y: auto;
+    /* background: var(--black-d); */
+}
+:root
+{
+    --clr-l:#321cb1;
+    --clr-d:#1d20cf;
+    --black-d:#101820;
+    --black-l:#34495E;
+    --white-l:#eee;
+    --white-d:#fff;
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.frame
+{
+    margin:3rem auto 3rem auto;
+    width: 80%;
+}
+#header
+{
+    position:fixed;
+    top: 0;
+    left: 10%;
+    margin: auto;
+    padding: 1rem;
+    width: 80%;
+    height: 10vh;
+    background: var(--white-d);
+    border-radius:0 1.5rem 0 1.5rem ;
+    box-shadow: 0 2px 5px 0px var(--black-l);
+}
+.logo
+{
+    justify-content: center;
+}
+.logo img
+{
+    display: inline;
+    width: 50px;
+}
+h3
+{
+    color:var(--black-d);
+}
+#nav a
+{
+    display: inline-block;
+    text-align: center;
+    color: var(--clr-d);
+    width: 100px;
+    line-height: 5vh;
+    border:2px solid transparent;
+    border-radius:3rem;
+}
+#nav a:last-child
+{
+    width: 50px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--black-d);
+}
+#nav a:last-child:hover
+{
+    border-color:transparent;
+    color:var(--clr-l);
+}
+#nav a:hover
+{
+    border-color:var(--clr-l);
+}
+#menu
+{
+    border:2px solid var(--black-d);
+}
+/*
+    id home css -----------------------
+*/
+#home
+{
+    height: 80vh;
+    background: radial-gradient(circle at 80% 80%, var(--clr-d) 30%,transparent 30%);
+}
+h1
+{
+    color: var(--clr-d);
+    font-size: 3rem;
+}
+#home img[alt='code']
+{
+    width: 70px;
+    height: auto;
+}
+h4
+{
+    color: var(--black-l);
+    margin: 5rem 0;
+}
+.lnk_btn
+{
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: var(--white-l);
+    background: var(--clr-l);
+    border-radius: 1rem 0;
+    transition: all linear 0.5s;
+}
+.lnk_btn:hover
+{
+    color:var(--clr-d);
+    background: transparent;
+    border: 2px groove var(--clr-l);
+}
+.image
+{
+    margin: auto;
+    width: 300px;
+    height: auto;
+    object-fit: scale-down;
+}
+.left
+{
+    width: 50%;
+}
+.right
+{
+    width: 50%;
+}
+/*
+    id learn css -----------------------
+*/
+#learn
+{
+    height: 100vh;
+    justify-content: space-evenly;
+}
+.serve
+{
+    padding: 1rem;
+    width:21%;
+    text-align: center;
+    background:var(--white-l);
+    border-radius: 2rem;
+    transition: all linear 0.5s;
+}
+.serve:hover
+{
+    border-bottom: 5px solid var(--clr-d);
+    transform: translateY(-50px);
+}
+.serve h3
+{
+    color:var(--clr-l);
+}
+.serve img
+{
+    margin: 1rem auto !important;
+    width: 100px;
+    height: auto;
+}
+.serve p
+{
+    color:var(--black-l);
+}
+h2
+{
+    padding: 1rem;
+    color:var(--clr-d);
+    border-bottom: 2px dotted var(--clr-d);
+}
+p
+{
+    margin: 3rem auto;
+    color: var(--black-d);
+}
+/*
+    login form css --------------------------
+*/
+#login
+{
+    height: 100vh;
+    justify-content: center;
+}
+#login > div
+{
+    padding: 1rem 10rem 1rem 1rem;
+    width: 600px;
+    border-radius: 1rem 0 0 0;
+    box-shadow: 3px 3px 10px var(--black-d);
+}
+form
+{
+    margin: 1rem 1rem 1rem -8rem;
+    padding: 2rem;
+    width: 400px;
+    border-radius: 1rem;
+    background: var(--white-d);
+    box-shadow: 2px 2px 5px var(--black-l);
+}
+fieldset
+{
+    border: 2px solid var(--clr-d);
+    border-radius: 1rem;
+}
+legend
+{
+    margin: auto 2rem;
+    padding: 1rem;
+    color:var(--clr-l);
+}
+form h3
+{
+    padding: 1rem;
+    color: var(--clr-d);
+    border-bottom: 2px solid var(--clr-d);
+}
+.fld
+{
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 100%;
+    font-size: 18px;
+    color: var(--clr-l);
+    border:1px solid var(--black-l);
+    border-radius: 1.5rem;
+}
+.fld:focus
+{
+    border-color: var(--clr-l);
+}
+/*
+    element css
+*/
+#web, #server, #database
+{
+    margin:10rem auto;
+}
+.btn
+{
+    display: inline-block;
+    padding: 1rem;
+    width: 150px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color:var(--white-l);
+    background: var(--clr-d);
+    border:2px solid var(--clr-d);
+    border-radius: 1.5rem;
+}
+.btn:hover
+{
+    color:var(--clr-l);
+    background: transparent;
+}
+/*
+    image css ---------------------------
+*/
+img[alt="it"]
+{
+    margin-left:5rem;
+}
+img:not([alt="code"])
+{
+    margin-left: 5rem;
+}
+img[alt="laptop"]
+{
+    width: 250px;
+}
+/*
+    footer css -------------------------
+*/
+#footer
+{
+    background: var(--white-d);
+}
+.scl_lnk
+{
+    width: 100px;
+}
+.scl_lnk :is(a,img)
+{
+    width: 50px;
+    margin: auto;
+    transition: all linear 0.5s;
+}
+.scl_lnk a:hover img
+{
+    width: 70px;
+    transform: rotate(360deg);
+}
+.link
+{
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+    border-right: 2px solid var(--clr-d);
+    /* border-radius: 3rem; */
+    /* background: var(--white-d); */
+}
+.link h5
+{
+    padding: 1rem;
+    color:var(--clr-d);
+}
+.link a
+{
+    display: block;
+    padding: 1rem;
+    font-size: 14px;
+    color:var(--black-d);
+}
+.link a:hover
+{
+    color:var(--clr-d);
+    text-decoration: underline;
+}
+.copy
+{
+    justify-content: center;
+    height: 10vh;
+    color:var(--white-d );
+    background:var(--clr-l);
+}

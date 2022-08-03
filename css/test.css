@@ -1,0 +1,196 @@
+/*
+    Website 16 learner
+    Mayank All Right Reserved
+    CSS/style
+*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* body
+{
+    overflow: hidden;
+    overflow-y:scroll;
+    scroll-behavior: smooth ;
+} */
+
+:root
+{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #453bcf;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --magic:linear-gradient(to left, var(--indigo) , var(--purple));
+}
+#top
+{
+    z-index: 4;
+}
+#header
+{
+    border-radius: 0 0 0 0;
+    z-index: 5;
+}
+#header img
+{
+    width: 50px;
+    height: auto;
+}
+#header a
+{
+    color:var(--indigo);
+    border:2px solid transparent;
+    border-radius: 1rem;
+    /* width:100px; */
+}
+#header a:hover
+{
+    color:var(--gray-dark);
+    text-decoration: none;
+    border-color: var(--indigo);
+    
+}
+
+#menu_btn:hover
+{
+    color: var(--white);
+    background-color:var(--indigo);
+    border-radius: 10px;
+}
+
+#home
+{
+    background: radial-gradient(circle at 100% 100%, var(--purple) 25%, transparent 25%);
+}
+#link_btn
+{
+    color:var(--indigo);
+    border:2px inset var(--indigo);
+    border-radius: 0 1rem;
+}
+#link_btn:hover
+{
+    color: var(--white);
+    background:var(--magic);
+}
+
+
+/*
+    LEARN PAGE CSS 
+*/
+
+#learn
+{
+    background: radial-gradient(circle at 50% 0%, var(--dark) 25%, transparent 25%);
+}
+
+.learn_link
+{
+    background:var(--magic);
+}
+.learn_link:hover > img:hover
+{
+    transition: all linear 0.5s;
+    transform: translateY(-15PX);
+}
+/*
+    HOST PAGE CSS
+*/
+.h2
+{
+    color:var(--purple);
+}
+.host_btn
+{
+    border:2px solid var(--indigo);
+}
+.host_btn:hover
+{
+    color: var(--white);
+    background:var(--magic);
+}
+/*
+    FORM PAGE CSS
+*/
+form
+{
+    top:10%;
+    right: 0;
+    border-radius: 0 2rem;
+}
+form .btn
+{
+    border-radius: 0 1rem;
+}
+.form-control
+{
+    border:2px solid var(--purple);
+}
+/* #contact img
+{
+    border-radius: 1rem;
+    background: var(--magic);
+    background-blend-mode: overlay;
+} */
+/*
+    ABOUT PAGE CSS
+*/
+
+img[alt=about]
+{
+    background: var(--purple);
+    border-radius: 50rem 30rem 40rem 20rem;
+}
+/*
+    FOOTER PAGE CSS
+*/
+#bottom img:hover ,#contact img:hover
+{
+    transition: all linear 1s;
+    transform: rotate(360deg) scale(1);
+}
+#bottom .h4
+{
+    color: var(--purple);
+}
+.btn-scl
+{
+    color: var(--white);
+}
+.btn-scl:hover
+{
+    color: var(--white);
+    text-decoration: none;
+}
+.scl:hover
+{
+    background: var(--magic);
+}
+#bottom a:hover::first-letter
+{
+    color:var(--purple);
+}
+#bottom a::first-letter
+{
+    font-size: 2rem;
+    color:white;
+}
+#footer
+{
+    background: var(--magic);
+}
